@@ -27,17 +27,6 @@ export default createGlobalStyle`
     -webkit-font-smoothing:antialiased;
 
     height: 100vh;
-   /*  @media(max-width: 1080px) {
-    &{
-      height: 93.75%;
-    }
-  }*/
-
-    /*.App{
-      border:solid 1px red;
-    min-width: 100vw;
-    min-height: 100vh;
-    }*/
   }
   a{
     color: inherit;
