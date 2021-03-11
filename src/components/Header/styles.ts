@@ -6,6 +6,10 @@ export const Container = styled.header`
 
   padding: 10px;
 
+  svg:hover {
+    color: var(--purple);
+  }
+
   img {
     margin-right: 2rem;
   }
@@ -20,6 +24,7 @@ export const Account = styled.div`
   }
   p {
     color: var(--purple);
+    white-space: nowrap;
     svg {
       color: var(--dark-blue);
       margin-left: 8px;

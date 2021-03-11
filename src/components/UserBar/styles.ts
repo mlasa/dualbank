@@ -5,14 +5,24 @@ export const Container = styled.div`
   justify-content: space-around;
 
   padding: 10px;
+
   svg {
     margin: 0 8px;
     align-self: center;
+  }
+  svg:hover {
+    color: var(--purple);
   }
   img {
     width: 64px;
     height: 64px;
     border-radius: 50%;
+    @media (max-width: 1380px) {
+      & {
+        width: 50px;
+        height: 50px;
+      }
+    }
   }
 
   input {

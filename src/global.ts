@@ -26,8 +26,18 @@ export default createGlobalStyle`
     color: var(--dark-blue);
     -webkit-font-smoothing:antialiased;
 
-    width: 100vw;
     height: 100vh;
+   /*  @media(max-width: 1080px) {
+    &{
+      height: 93.75%;
+    }
+  }*/
+
+    /*.App{
+      border:solid 1px red;
+    min-width: 100vw;
+    min-height: 100vh;
+    }*/
   }
   a{
     color: inherit;
