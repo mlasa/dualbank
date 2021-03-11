@@ -5,8 +5,6 @@ export const Container = styled.header`
 
   margin-left: -6px;
   height: 5rem;
-  flex: 1;
-  min-width: 95%;
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.3);
 
   display: flex;

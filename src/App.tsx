@@ -3,7 +3,8 @@ import GlobalStyle from './global';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import SecondHeader from './components/SecondHeader';
-import { Headers } from './Styles';
+import { Headers, HorizontalHeaders } from './Styles';
+import UserActions from './components/UserActions';
 
 const App: React.FC = () => {
   return (
@@ -11,7 +12,10 @@ const App: React.FC = () => {
       <Header />
       <Headers>
         <Sidebar />
-        <SecondHeader />
+        <HorizontalHeaders>
+          <SecondHeader />
+          <UserActions />
+        </HorizontalHeaders>
       </Headers>
       <GlobalStyle />
     </div>
