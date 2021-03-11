@@ -2,9 +2,13 @@ import styled from 'styled-components';
 
 export const Container = styled.header`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 
   padding: 10px;
+
+  img {
+    margin-right: 2rem;
+  }
 `;
 
 export const Account = styled.div`
@@ -24,6 +28,7 @@ export const Account = styled.div`
 `;
 
 export const Balance = styled.div`
+  margin-left: 2rem;
   align-self: center;
   strong {
     svg {
@@ -35,4 +40,11 @@ export const Balance = styled.div`
     color: var(--green);
     font-weight: 400;
   }
+`;
+
+export const ContainerHeaderBar = styled.div`
+  display: flex;
+  justify-content: space-between;
+
+  padding: 10px;
 `;
