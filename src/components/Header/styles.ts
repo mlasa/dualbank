@@ -4,7 +4,7 @@ export const Container = styled.header`
   display: flex;
   justify-content: space-between;
 
-  padding: 10px;
+  padding: 15px;
 
   svg:hover {
     color: var(--purple);

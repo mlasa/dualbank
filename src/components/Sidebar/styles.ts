@@ -4,7 +4,7 @@ export const SidebarContainer = styled.div`
   position: relative;
   width: 4rem;
   flex: 1;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 12px 0 7px -4px rgba(0, 0, 0, 0.1);
 
   min-height: 85vh;
 `;

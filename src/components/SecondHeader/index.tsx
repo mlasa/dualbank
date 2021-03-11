@@ -1,8 +1,18 @@
 import React from 'react';
 import { Tag, PlusCircle, EyeOff } from 'react-feather';
 import { Container, Bills } from './styles';
+import Hiden from '../Hiden';
+import { useVisibility } from '../../hooks/Visibility';
 
 const SecondHeader: React.FC = () => {
+  const {
+    isFirstValue,
+    changeFirstValue,
+    isSecondValue,
+    changeSecondValue,
+    isThirdValue,
+    changeThirdValue,
+  } = useVisibility();
   return (
     <Container>
       <Tag size={25} />
@@ -13,9 +23,15 @@ const SecondHeader: React.FC = () => {
           <div>
             <strong>
               Principal
-              <EyeOff size={20} />
+              {isFirstValue && <EyeOff size={20} onClick={changeFirstValue} />}
             </strong>
-            <p>R$40.000,00</p>
+            <p>
+              {isFirstValue ? (
+                `R$40.000,00`
+              ) : (
+                <Hiden hideElement={changeFirstValue} />
+              )}
+            </p>
           </div>
         </div>
         <div>
@@ -23,9 +39,17 @@ const SecondHeader: React.FC = () => {
           <div>
             <strong>
               Aluguel
-              <EyeOff size={20} />
+              {isSecondValue && (
+                <EyeOff size={20} onClick={changeSecondValue} />
+              )}
             </strong>
-            <p>R$40.000,00</p>
+            <p>
+              {isSecondValue ? (
+                `R$40.000,00`
+              ) : (
+                <Hiden hideElement={changeSecondValue} />
+              )}
+            </p>
           </div>
         </div>
         <div>
@@ -33,9 +57,15 @@ const SecondHeader: React.FC = () => {
           <div>
             <strong>
               Alimentação
-              <EyeOff size={20} />
+              {isThirdValue && <EyeOff size={20} onClick={changeThirdValue} />}
             </strong>
-            <p>R$40.000,00</p>
+            <p>
+              {isThirdValue ? (
+                `R$40.000,00`
+              ) : (
+                <Hiden hideElement={changeThirdValue} />
+              )}
+            </p>
           </div>
         </div>
       </Bills>

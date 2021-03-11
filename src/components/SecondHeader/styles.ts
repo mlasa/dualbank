@@ -5,16 +5,13 @@ export const Container = styled.header`
 
   margin-left: -6px;
   height: 5rem;
-  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.1);
 
   display: flex;
 
   svg {
     margin-left: 20px;
     align-self: center;
-  }
-  svg:hover {
-    color: var(--purple);
   }
 `;
 

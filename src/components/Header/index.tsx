@@ -3,8 +3,11 @@ import { ChevronDown, Copy, EyeOff } from 'react-feather';
 import { Container, Balance, Account, ContainerHeaderBar } from './styles';
 import logo from '../../assets/logo.svg';
 import UserBAr from '../UserBar';
+import Hiden from '../Hiden';
+import { useVisibility } from '../../hooks/Visibility';
 
 const Header: React.FC = () => {
+  const { isBalanceHeaderVisible, changeBalanceHeader } = useVisibility();
   return (
     <>
       <ContainerHeaderBar>
@@ -21,11 +24,19 @@ const Header: React.FC = () => {
               <Copy size={20} />
             </p>
           </Account>
+
           <Balance>
             <strong>
-              Saldo <EyeOff size={18} />
+              Saldo
+              {isBalanceHeaderVisible && (
+                <EyeOff size={18} onClick={changeBalanceHeader} />
+              )}
             </strong>
-            <p>R$40.000,00</p>
+            {isBalanceHeaderVisible ? (
+              <p>R$40.000,00</p>
+            ) : (
+              <Hiden hideElement={changeBalanceHeader} />
+            )}
           </Balance>
         </Container>
         <UserBAr />

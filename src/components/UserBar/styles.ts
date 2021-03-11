@@ -35,7 +35,8 @@ export const Container = styled.div`
     align-items: center;
     align-self: center;
 
-    height: 32px;
+    height: 45px;
+    width: 17rem;
     border-radius: 5px;
     border: solid 1px var(--gray);
 
