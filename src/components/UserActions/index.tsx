@@ -5,7 +5,7 @@ import NavComponent from '../NavComponent';
 import { NavShareData } from './NavShareData';
 
 const UserActions: React.FC = () => {
-  const [isShare, setIsShare] = useState(true);
+  const [isShare, setIsShare] = useState(false);
 
   const openNav = () => setIsShare(!isShare);
   return (
