@@ -13,14 +13,17 @@ export const Container = styled.div`
   svg:hover {
     color: var(--purple);
   }
-  img {
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-    @media (max-width: 1380px) {
-      & {
-        width: 50px;
-        height: 50px;
+  span {
+    position: relative;
+    img {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      @media (max-width: 1380px) {
+        & {
+          width: 50px;
+          height: 50px;
+        }
       }
     }
   }

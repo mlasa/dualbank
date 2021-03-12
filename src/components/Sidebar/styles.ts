@@ -34,7 +34,7 @@ export const SidebarComponent = styled.aside`
 
   span {
     background: var(--purple);
-    position: fixed;
+    position: absolute;
     bottom: 50px;
     left: 40px;
     width: 40px;

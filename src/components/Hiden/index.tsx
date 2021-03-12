@@ -4,11 +4,18 @@ import { HidenContainer } from './styles';
 
 interface HidenProps {
   hideElement(): void;
+  elementWidth?: string;
 }
 
-const Hiden: React.FC<HidenProps> = ({ hideElement }) => {
+const Hiden: React.FC<HidenProps> = ({
+  hideElement,
+  elementWidth = '70 px',
+}) => {
   return (
-    <HidenContainer style={{ width: '70px' }} onClick={() => hideElement()}>
+    <HidenContainer
+      style={{ width: `${elementWidth}` }}
+      onClick={() => hideElement()}
+    >
       <Eye size={20} />
     </HidenContainer>
   );

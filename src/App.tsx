@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import GlobalStyle from './global';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
@@ -11,18 +12,20 @@ import { VisibilityProvider } from './hooks/Visibility';
 const App: React.FC = () => {
   return (
     <div className="App">
-      <VisibilityProvider>
-        <Header />
-        <Headers>
-          <Sidebar />
-          <Horizontal>
-            <SecondHeader />
-            <UserActions />
-            <Panel />
-          </Horizontal>
-        </Headers>
-        <GlobalStyle />
-      </VisibilityProvider>
+      <BrowserRouter>
+        <VisibilityProvider>
+          <Header />
+          <Headers>
+            <Sidebar />
+            <Horizontal>
+              <SecondHeader />
+              <UserActions />
+              <Panel />
+            </Horizontal>
+          </Headers>
+          <GlobalStyle />
+        </VisibilityProvider>
+      </BrowserRouter>
     </div>
   );
 };

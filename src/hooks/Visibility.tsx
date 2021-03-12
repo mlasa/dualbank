@@ -24,21 +24,17 @@ const VisibilityProvider: React.FC = ({ children }) => {
   const [isSecondValue, setIsSecondValue] = useState(false);
   const [isThirdValue, setIsThirdValue] = useState(false);
 
-  const changeBalancePanel = () => {
+  const changeBalancePanel = () =>
     setIsBalancePanelVisible(!isBalancePanelVisible);
-  };
-  const changeBalanceHeader = () => {
+
+  const changeBalanceHeader = () =>
     setIsBalanceHeaderVisible(!isBalanceHeaderVisible);
-  };
-  const changeFirstValue = () => {
-    setIsFirstValue(!isFirstValue);
-  };
-  const changeSecondValue = () => {
-    setIsSecondValue(!isSecondValue);
-  };
-  const changeThirdValue = () => {
-    setIsThirdValue(!isThirdValue);
-  };
+
+  const changeFirstValue = () => setIsFirstValue(!isFirstValue);
+
+  const changeSecondValue = () => setIsSecondValue(!isSecondValue);
+
+  const changeThirdValue = () => setIsThirdValue(!isThirdValue);
 
   return (
     <VisibilityContext.Provider

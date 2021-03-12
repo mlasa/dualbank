@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import { ChevronDown, Copy, EyeOff } from 'react-feather';
 import { Container, Balance, Account, ContainerHeaderBar } from './styles';
 import logo from '../../assets/logo.svg';
@@ -8,6 +8,7 @@ import { useVisibility } from '../../hooks/Visibility';
 
 const Header: React.FC = () => {
   const { isBalanceHeaderVisible, changeBalanceHeader } = useVisibility();
+
   return (
     <>
       <ContainerHeaderBar>
@@ -20,7 +21,8 @@ const Header: React.FC = () => {
               <ChevronDown size={20} />
             </strong>
             <p>
-              Ag. 00005-1 C.C. 00000000000000000020-1
+              Ag. <span>00005-1</span> C.C.
+              <span>00000000000000000020-1</span>
               <Copy size={20} />
             </p>
           </Account>

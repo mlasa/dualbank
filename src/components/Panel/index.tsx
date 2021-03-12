@@ -12,7 +12,7 @@ const Panel: React.FC = () => {
         <div>
           <p>Data do Saldo</p>
           <Data>
-            <input type="text" placeholder="DD/MM/AAAA" />
+            <input type="date" placeholder="DD/MM/AAAA" />
             <ChevronDown size={20} />
           </Data>
           <small>

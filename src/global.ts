@@ -42,4 +42,10 @@ export default createGlobalStyle`
     cursor:pointer;
     border-radius: 5px;
   }
+  li{
+    list-style-type:none;
+  }
+  svg{
+    cursor: pointer;
+  }
 `;
