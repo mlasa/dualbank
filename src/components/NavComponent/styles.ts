@@ -16,4 +16,7 @@ export const Nav = styled.nav`
   li:hover {
     color: var(--purple);
   }
+  small {
+    color: var(--purple);
+  }
 `;
