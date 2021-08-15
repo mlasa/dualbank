@@ -1,4 +1,5 @@
 # Prova técnica para desenvolvedor frontend júnior
+Desenvolvido em março de 2021
 
 O resultado pode ser conferido aqui: https://dualbank.vercel.app
 
