@@ -13,9 +13,8 @@ interface VisibilityContextData {
   changeBalanceHeader(): void;
 }
 
-const VisibilityContext = createContext<VisibilityContextData>(
-  {} as VisibilityContextData,
-);
+const VisibilityContext = createContext<VisibilityContextData | undefined>(undefined);
+
 
 const VisibilityProvider: React.FC = ({ children }) => {
   const [isBalancePanelVisible, setIsBalancePanelVisible] = useState(false);
