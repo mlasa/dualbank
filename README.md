@@ -1,7 +1,7 @@
 # Prova técnica para desenvolvedor frontend júnior
 Desenvolvido em março de 2021
 
-O resultado pode ser conferido aqui: https://dualbank.vercel.app
+Acesso pelo link disponível na seção "Sobre" ao lado.
 
 <strong>Especificações</strong>
 - Usar React
